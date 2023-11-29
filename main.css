@@ -1,0 +1,110 @@
+#popup_1:target {
+    display: block;
+}
+
+.popup-black {
+    content: '';
+    background: rgba(102, 102, 102, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+}
+.gear {
+    cursor: pointer;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    color: #555;
+    font-size: 80px;
+    line-height: 0;
+    border: 1px solid #555;
+    border-radius: 15%;
+    padding: 0;
+    margin: 15px;
+    box-sizing:border-box;
+    display: block;
+}
+
+.gear svg {
+    position: absolute;
+    transform: translate(-50%,-50%)!important;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: black;
+    font-size: 500%;
+    position: inside;
+} 
+  
+/* ширина модального окна и его отступы от экрана */
+.modal-window {
+    position: relative;
+    width: 90%;
+    margin: 5% auto;
+}
+
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: .5rem;
+}
+
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #000;
+}
+
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    flex-grow: 0;
+    margin-left: .5rem;
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    position: relative;
+    padding: 15px;
+    overflow: auto;
+}
+.modal-body progress, textarea {
+    width: 100%;
+    display: block;
+}
+
+.modal-body textarea {
+    margin-top: 1rem;
+    padding: 0;
+}
+.modal-footer {
+    padding: 15px;
+    border-top: 1px solid #000;
+    text-align: end;
+}
+
